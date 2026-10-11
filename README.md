@@ -1,50 +1,52 @@
 # Code Helper AI
 
-An experimental AI-assisted coding project focused on helping developers understand problems, generate implementation ideas, and accelerate routine programming work.
+An experimental AI-assisted coding project exploring how language models can support software development through problem explanation, implementation suggestions, debugging assistance, and code review workflows.
 
-## Concept
+## Project Goal
 
-`text
-Problem / Prompt
-      ↓
-AI Understanding
-      ↓
-Code Generation
-      ↓
-Developer Review
-      ↓
-Execution & Testing
-`
+The aim is to build a developer-assistance tool that helps a programmer reason about a task and produce a useful starting point—not to replace engineering judgment or testing.
 
-The goal is developer assistance, not blind code generation. Generated code should always be reviewed, tested, and adapted to the target project.
+## Conceptual Workflow
 
-## Focus Areas
+```text
+Developer prompt / problem
+          ↓
+Context and requirements
+          ↓
+AI-generated explanation or code
+          ↓
+Developer review
+          ↓
+Execution, tests, and iteration
+```
 
-- Programming assistance
-- Code generation
+## Areas of Exploration
+
+- Code generation and explanation
 - Problem decomposition
 - Debugging support
+- Programming-learning assistance
 - Developer productivity
-- AI-assisted software development
+- Future repository-aware context and retrieval
 
-## Engineering Direction
+## Responsible Use
 
-Future iterations can include:
+Generated code can be incorrect, insecure, inefficient, or inconsistent with the surrounding project. Review every suggestion, check dependencies and security implications, and run appropriate tests before adopting it. Do not paste secrets, credentials, or private source code into services that are not approved for that data.
 
-- Context-aware code assistance
-- Repository-aware retrieval
-- RAG over project documentation
-- Automated code explanation
-- Test generation
-- Multi-file project understanding
+## Current Status
 
-## Status
+**Experimental / learning project.** The exact supported capabilities depend on the implementation in the repository; planned extensions are not presented as completed features.
 
-**Experimental / learning project.**
+## Possible Next Steps
+
+- Document the current model/provider and configuration
+- Add example prompts and reproducible usage instructions
+- Include tests for core behavior
+- Add repository context only with explicit user-selected scope
+- Evaluate output quality on a small, documented task set
 
 ## Author
 
-**Sudipta Roy**  
-B.Tech CSE (AI & ML)
+**Sudipta Roy** · B.Tech CSE (AI & ML)
 
-Focus: **AI/ML • LLM Engineering • RAG • Python**
+Focus: Python, AI/ML, LLM engineering, and practical developer tools.
